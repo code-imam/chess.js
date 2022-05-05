@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Chess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple chess AI.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Icons (Material Design) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Chessboard JS -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+        integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+    <script defer src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+
+    <!-- Chess JS By  Jeff Hlywa Slightly Modified -->
+    <script defer src="js/chess.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+        </script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom JS -->
+    <script defer src="js/main.js"></script>
+
+
+</head>
+
+
+<style>
+    h1 {
+        color: rgb(255, 255, 255) !important;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h2 {
+        color: rgb(255, 255, 255) !important;
+        font-size: 300%;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body style=" background: linear-gradient(147deg, rgba(81,126,135,1) 27%, rgba(19,19,73,1) 66%);
+ overflow: auto ">
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Navigation-->
+            <nav class="navbar navbar-light bg-dark static-top topnav">
+                <div class="container-fluid align-items-center">
+                    <h1 class="navbar-nav mx-auto color: white, topnav-centered " href="#!">Chess</h1>
+
+                </div>
+            </nav>
+            <br>
+            <br>
+            <h2 class=" d-flex justify-content-center font-weight: 900;"> Player vs Player</h2> <br> <br>
+
+
+            <div class="container ">
+
+                <div class="row align-items-center">
+
+
+                    <div class="col-md-5">
+                        <h1>Game status:</h1>
+                        <div class="col-md-6 my-2">
+
+                        </div>
+                        <br>
+                        <div class="modal"></div>
+                        <p class="" id="status"></p>
+
+
+                    </div>
+
+                    <div class="col-md-7">
+                        <div id="myBoard" style=" width: 80%; overflow: auto;">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="bg-dark text-center text-white">
+
+    <div class="container p-2 pb-0">
+
+        <section class="">
+            <form action="">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-auto">
+                        <p class="pt-3">
+                            <strong>Amjad Al Kharusi</strong>
+                        </p>
+                    </div>
+
+                    <div class="col-auto">
+
+                        <a href="https://github.com/Amjad-101" style="background: bg-dark;
+                        color: white;" class="fa fa-github pt-2"></a>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+
+
+
+
+
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright
+
+    </div>
+
+</footer>
+
+
+</html>
