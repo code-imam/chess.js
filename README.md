@@ -1,2 +1,2 @@
 Simple chess game using chess.js
-https://amjad-101.github.io/chess.js/
+https://code-imam.github.io/chess.js/
